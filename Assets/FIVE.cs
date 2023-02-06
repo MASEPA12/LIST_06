@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class FIVE : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int[] ArraY;
+    private int variable = 0;
+
     void Start()
     {
-        
-    }
+        foreach(int number in ArraY)
+        {
+            variable += number;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            Debug.Log(variable);
+        }
     }
 }

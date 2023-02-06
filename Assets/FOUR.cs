@@ -9,15 +9,13 @@ public class FOUR : MonoBehaviour
 
     void Start()
     {
-        while (start >= end)
+        while (start <= end)
         {
-
+            start++;
             if (start % 5 == 0)
             {
                 Debug.Log(start);
             }
-            start += 5;
-
         }
     }
 }

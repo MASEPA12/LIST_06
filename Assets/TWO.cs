@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class TWO : MonoBehaviour
 {
+    private int t = 1;
     void Start()
     {
-        for(int i = 100; i >= 0; i-=2)
+        while (t <= 20)
         {
-            Debug.Log(i);
-        }    
+            Debug.Log("“Hola, holita, vecinito");
+            t++;
+        }
+    }
+
+    void Update()
+    {
+        
     }
 }

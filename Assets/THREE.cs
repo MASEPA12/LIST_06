@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class THREE : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
-    {
-        
+    {   //we call the CountDown function once
+        StartCoroutine(CountDown());
     }
+    private IEnumerator CountDown()
+    {   //meanwhile a is bigger than 0, it will wait one second and print a
+        for (int a = 60; a >= 0; a--)
+        {
+            yield return new WaitForSeconds(1);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            Debug.Log(a);
+            if (a == 0)
+            {
+                Debug.Log("COUNTDOWN FINISHED");
+            }
+        }
     }
 }

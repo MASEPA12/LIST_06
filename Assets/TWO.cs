@@ -13,9 +13,4 @@ public class TWO : MonoBehaviour
             t++;
         }
     }
-
-    void Update()
-    {
-        
-    }
 }

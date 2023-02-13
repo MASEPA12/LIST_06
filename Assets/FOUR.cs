@@ -9,6 +9,7 @@ public class FOUR : MonoBehaviour
 
     void Start()
     {
+        //as long as the start is less than or equal to the end, the numbers whose module between 5 is 0 (divisible by 5) will be displayed
         while (start <= end)
         {
             start++;
